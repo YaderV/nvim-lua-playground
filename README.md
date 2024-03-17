@@ -8,4 +8,4 @@ docker build --platform linux/arm64/v8 -t nvim-lua-playground .
 docker run --name nvim-lua -d -v ./nvim:/root/.config/nvim nvim-lua-playground
 
 ## Exec neovim ##
-docker exec nvim-lua <command>
+docker exec -it nvim-lua <command>
